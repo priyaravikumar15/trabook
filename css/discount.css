@@ -1,0 +1,144 @@
+
+.deals-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .deals-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .deals-header span {
+    color: #ff652f;
+  }
+  
+  .deals-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 50px;
+  }
+  
+  .deals-slider {
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  #slide1:checked ~ .deals-slider .slide-1,
+  #slide2:checked ~ .deals-slider .slide-2 {
+    display: flex;
+  }
+  
+  .deal-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .deal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .card-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .new-price {
+    color: #ff652f;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .book-now {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff652f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .deal-card:hover {
+    transform: translateY(-5px);
+    content: 'book now';
+  }
+
+  .deal-card:hover .book-now {
+    opacity: 1;
+    visibility: visible;
+  }
+ 
+  .deals-navigation {
+    margin-top: 40px;
+  }
+  
+  .nav-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background: #ff652f;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .slide {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

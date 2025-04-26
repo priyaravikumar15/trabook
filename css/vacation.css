@@ -1,0 +1,125 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  } */
+  
+  .vacation-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .vacation-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .vacation-header h2 span {
+    color: #ff652f;
+  }
+  
+  .vacation-header p {
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0 30px;
+  }
+  
+  .vacation-cards {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 420px;
+  }
+  
+  .cards-slide {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.5s ease;
+  }
+  
+  .second-slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+  
+  .vacation-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .vacation-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .vacation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 15px;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #ff652f;
+    font-weight: 600;
+  }
+  
+  .arrow-buttons {
+    margin: 2em 0em 2em 50em;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    font-size: 18px;
+    background: white;
+    transition: background 0.3s;
+  }
+  
+  .arrow:hover {
+    background: #ff5823;
+    color: white;
+  }
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cards-slide {
+      flex-direction: column;
+      align-items: center;
+    }
+    .vacation-card {
+      width: 50%;
+    }
+  }
+  
